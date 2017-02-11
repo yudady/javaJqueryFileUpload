@@ -18,6 +18,21 @@
 		<servlet-name>ChunkedUploadServlet</servlet-name>
 		<servlet-class>org.lyy.file.ChunkedUploadServlet</servlet-class>
 	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<servlet>
 		<description></description>
 		<display-name>ResumePointServlet</display-name>
@@ -45,4 +60,38 @@
 		<filter-name>UploadFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+
+
+
+
+
+
+
+
+
+	<servlet>
+		<description></description>
+		<display-name>UpdateServlet</display-name>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>org.lyy.file.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </web-app>

@@ -32,7 +32,8 @@
 <body>
 
 	<div class="container">
-		<h1>jQuery File Upload Demo</h1><a href="index2.jsp">index2.jsp</a>
+		<h1>jQuery File Upload Demo</h1>
+		<a href="index.jsp">index.jsp</a>
 		<h2 class="lead">Basic Plus UI version</h2>
 
 		<!-- The file upload form used as target for the file upload widget -->
@@ -82,9 +83,79 @@
 				</div>
 			</div>
 			<!-- The table listing the files available for upload/download -->
+
+
+
+
+
+
+
+
 			<table role="presentation" class="table table-striped">
-				<tbody class="files"></tbody>
+				<tbody class="files">
+					<tr class="template-download fade in">
+						<td><span class="indexCal"></span></td>
+						<td><span class="preview"> <a href="DSCI0138.JPG" title="DSCI0138.JPG" download="DSCI0138.JPG" data-gallery=""><img src="DSCI0138.JPG"
+									style="width: 79px;"></a>
+						</span></td>
+						<td>
+							<p class="name">
+								<a href="DSCI0138.JPG" title="DSCI0138.JPG" download="DSCI0138.JPG" data-gallery="">DSCI0138.JPG</a>
+							</p>
+						</td>
+						<td><span class="size">241.57 KB</span></td>
+						<td>
+
+							<button class="btn btn-danger delete" data-type="GET" data-url="upload?file=DSCI0138.JPG" data-xhr-fields="{&quot;withCredentials&quot;:true}">
+								<i class="glyphicon glyphicon-trash"></i> <span>Delete</span>
+							</button> <input type="checkbox" name="delete" value="1" class="toggle">
+
+						</td>
+					</tr>
+					<tr class="template-download fade in">
+						<td><span class="indexCal"></span></td>
+						<td><span class="preview"> <a href="fWEIl7ut.jpg" title="fWEIl7ut.jpg" download="fWEIl7ut.jpg" data-gallery=""><img src="fWEIl7ut.jpg"
+									style="width: 79px;"></a>
+
+						</span></td>
+						<td>
+							<p class="name">
+
+								<a href="fWEIl7ut.jpg" title="fWEIl7ut.jpg" download="fWEIl7ut.jpg" data-gallery="">fWEIl7ut.jpg</a>
+
+							</p>
+
+						</td>
+						<td><span class="size">66.25 KB</span></td>
+						<td>
+
+							<button class="btn btn-danger delete" data-type="GET" data-url="upload?file=fWEIl7ut.jpg" data-xhr-fields="{&quot;withCredentials&quot;:true}">
+								<i class="glyphicon glyphicon-trash"></i> <span>Delete</span>
+							</button> <input type="checkbox" name="delete" value="1" class="toggle">
+
+						</td>
+					</tr>
+
+
+
+
+
+
+				</tbody>
 			</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 		</form>
@@ -213,8 +284,11 @@
 
 
 
+	<script type="text/javascript">
+		$(function() {
 
-
+		});
+	</script>
 
 
 

@@ -32,7 +32,7 @@
 <body>
 
 	<div class="container">
-		<h1>jQuery File Upload Demo</h1><a href="index2.jsp">index2.jsp</a>
+		<h1>jQuery File Upload Demo</h1>
 		<h2 class="lead">Basic Plus UI version</h2>
 
 		<!-- The file upload form used as target for the file upload widget -->
@@ -138,9 +138,6 @@
 {% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-download fade">
         <td>
-            <span class="indexCal"></span>
-        </td>
-        <td>
             <span class="preview">
                 {% if (file.thumbnailUrl) { %}
                     <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}" style="width:79px;height80px" ></a>
@@ -213,8 +210,26 @@
 
 
 
+	<script type="text/javascript">
+
+	$(function(){
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+	});
+
+	</script>
 
 
 
