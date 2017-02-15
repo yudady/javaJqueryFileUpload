@@ -24,6 +24,15 @@ public class Test01 {
 		ImageIO.write(thumbnail2, "png", new File("C:/Users/tommy/Desktop/test/" + Math.random() + ".png"));// 输出到文件流
 		ImageIO.write(thumbnail3, "gif", new File("C:/Users/tommy/Desktop/test/" + Math.random() + ".gif"));// 输出到文件流
 
+		/**
+		 * this
+		 */
+		BufferedImage image4 = ImageIO.read(new File("C:/Users/tommy/Desktop/DSCI0138.JPG")); // 读入文件
+		BufferedImage thumbnail = Scalr.resize(image4, Scalr.Method.SPEED, Scalr.Mode.FIT_TO_WIDTH, 2500, 5000,
+				Scalr.OP_ANTIALIAS);
+
+		ImageIO.write(thumbnail, "JPG", new File("C:/Users/tommy/Desktop/test/" + Math.random() + ".JPG"));// 输出到文件流
+
 		System.out.println("ok");
 	}
 }
