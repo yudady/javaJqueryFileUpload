@@ -6,7 +6,7 @@ $(function() {
 		async : false,
 		options : {
 			acceptFileTypes : /(\.|\/)(gif|jpe?g|png)$/i,
-			formData : $('#fileupload').serializeArray()
+            formData : $('#fileupload').serializeArray()
 		}
 	}).bind('fileuploadadd', function(e, data) {
 
